@@ -1,0 +1,166 @@
+
+html, body, #root {
+  height: 100%;
+  padding: 40;
+  margin: 20;
+  overflow: auto;
+  box-sizing: content-box;
+
+}
+
+p {
+  font-size: xx-large;
+  color: white;
+}
+
+body {
+  background: linear-gradient(to right, red, blue);
+}
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.setting {
+  align-self: flex-start;
+  padding: 5px 10px;
+
+  button {
+    font-size: 15px;
+  }
+
+  input {
+    font-size: 20px;
+  }
+}
+
+.topWall {
+  border-top: 10px solid rgb(249, 246, 246);
+}
+
+.rightWall {
+  border-right: 10px solid rgb(243, 241, 241);
+}
+
+.bottomWall {
+  border-bottom: 10px solid rgb(252, 249, 249);
+}
+
+.leftWall {
+  border-left: 10px solid rgb(250, 248, 248);
+}
+
+.sol {
+  div {
+    height: 10%;
+    width: 10%;
+    border-radius: 100%;
+    background-color: peachpuff;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  }
+  body {
+    animation: rainbowBall 2s infinite;
+  }
+}
+
+.currentPosition {
+  div {
+    background-image: url('./images/pacman.png');
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    display: block;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
+}
+
+.destination {
+  div {
+    background-image: url('./images/ghost.png');
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    display: block;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
+}
+
+.currentPosition.destination{
+    animation: rainbowBall 2s infinite;
+}
+
+@keyframes rainbowBall {
+  0%   {background-color: gold;}
+  15%  {background-color: coral;}
+  29%  {background-color: papayawhip;}
+  43%  {background-color: darkseagreen;}
+  57%  {background-color: lightcyan;}
+  71% {background-color: dodgerblue;}
+  84% {background-color: violet;}
+  100% {background-color: indigo;}
+}
+
+#maze {
+  margin-top: 20px;
+  border-collapse: collapse;
+  td {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.info {
+  margin-top: 20px;
+  width: 100%;
+  background: cornsilk;
+  padding: 3px;
+  font-size: 20px;
+  p {
+    text-transform: uppercase;
+    color: forestgreen;
+  }
+}
+.topWall
+{
+  background: rgb(12, 10, 0);
+}
+.bottomWall
+{
+  background: rgb(20, 16, 1);
+}
+.leftWall
+{
+  background: rgb(7, 6, 0);
+}
+.rightWall
+{
+  background: rgb(16, 13, 0);
+}
+
+
+
+
